@@ -13,32 +13,48 @@
 ## Установка
 
 1. Клонируйте репозиторий:
-bash git clone https://github.com/Knkydd/ASCII-Art.git
+```bash
+  git clone https://github.com/Knkydd/ASCII-Art.git
+ ```
 2. Создайте виртуальную среду и активируйте её:
-bash python -m venv .venv
+```bash
+  python -m venv .venv
+ ```
 
 # Windows
-.venv\Scripts\activate
+```bash
+  .venv\Scripts\activate
+```
 
 # Linux/macOS
-source .venv/bin/activate
+```bash
+  source .venv/bin/activate
+```
 
 3. Установите зависимости:
-bash pip install -r requirements.txt
+```bash
+  pip install -r requirements.txt
+```
 
 
 ## Использование
 
 
 ### Базовое использование
-bash python src/main.py path/to/image.jpg
+```bash
+  python src/main.py path/to/image.jpg
+```
 
 
 ### С указанием выходного файла
-bash python src/main.py path/to/image.jpg output.txt
+```bash
+  python src/main.py path/to/image.jpg output.txt
+```
 
 ### С дополнительными параметрами
-bash python src/main.py --input path/to/image.jpg --output result.txt --width 100
+```bash
+  python src/main.py --input path/to/image.jpg --output result.txt --width 100
+```
 
 
 ### Параметры командной строки
@@ -52,31 +68,14 @@ bash python src/main.py --input path/to/image.jpg --output result.txt --width 10
 
 ### Черно-белый режим
 При запуске программы выберите опцию 'G' для создания черно-белого ASCII-арта:
-What type of ascii do you want? [C/c - Colourful] | [G/g - Grayscale]
-
-> 
-> > 
-> > > G
-> > > 
-> > 
-> > 
-> 
->
-
+```What type of ascii do you want? [C/c - Colourful] | [G/g - Grayscale]```<br>
+```>>> G```
 
 
 ### Цветной режим (ANSI)
 Выберите опцию 'C' для создания цветного ASCII-арта с использованием ANSI-цветов:
-What type of ascii do you want? [C/c - Colourful] | [G/g - Grayscale]
-
-> 
-> > 
-> > > C
-> > > 
-> > 
-> > 
-> 
->
+```What type of ascii do you want? [C/c - Colourful] | [G/g - Grayscale]```<br>
+```>>> C```
 
 
 ## Структура проекта
@@ -106,7 +105,9 @@ ASCII-art/
 - NumPy >= 1.26.4 - для работы с массивами
 
 ## Запуск тестов
-bash python -m unittest tests/test_ascii_artist.p
+```bash
+  python -m unittest tests/test_ascii_artist.py
+```
 
 ## Лицензия
 MIT License
